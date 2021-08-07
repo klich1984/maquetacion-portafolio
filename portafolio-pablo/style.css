@@ -12,7 +12,7 @@ Layout mobile first
   --white-color: #FFFFFE;
   --text-color: #5F6C7B;
   --title-color: #094067;
-  --background-alpha-color: #D8EEFE;
+  --background-alpha-color: rgba(36, 38, 41, 0.5);
   --background-dark-color: #242629;
   --background-button-color: #EAF0F3;
   --button-color: #3DA9FC;
@@ -97,9 +97,83 @@ p {
 
 /* ****** Components ****** */
 
+/* ****** Menu ****** */
+.menu-btn {
+  border: 0;
+  cursor: pointer;
+}
+
+/* Change color of icons svg */
+.menu-btn svg {
+  stroke: var(--first-color);
+}
+
+.menu {
+  position: fixed;
+  padding-bottom: 5px;
+  left: 0;
+  top: var(--header-height);
+  width: 100%;
+  height: 36rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-alpha-color);
+  /* add class for JS */
+  opacity: 0;
+  /* Do not react to the interactive of the element */
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--second-color);
+  background-color: var(--white-color);
+}
+
+.menu a:hover {
+  color: var(--first-color);
+  opacity: 1;
+}
+
 /* ****** Utilities ****** */
 .box-shadow-1 {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 }
 
+.none {
+  display: none;
+}
 /* ****** Site Styles ****** */
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  padding: 1rem;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--background-button-color);
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: var(--second-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
