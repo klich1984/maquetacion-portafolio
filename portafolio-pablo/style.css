@@ -1,0 +1,105 @@
+/* ******
+Layout mobile first
+  Notes: 1rem = 16px
+  Sort alphabetically except html and body
+****** */
+
+/* ****** Custom Properties ****** */
+:root{
+  --first-color: #2B79BD;
+  --second-color: #90B4CE;
+  --third-color: #EF4565;
+  --white-color: #FFFFFE;
+  --text-color: #5F6C7B;
+  --title-color: #094067;
+  --background-alpha-color: #D8EEFE;
+  --background-dark-color: #242629;
+  --background-button-color: #EAF0F3;
+  --button-color: #3DA9FC;
+
+  --font: "Rubik", sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+
+/* ****** Reset ****** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  /* Trancistion with css */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  /* avoid scroll bar */
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--background-dark-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  color: var(--title-color);
+}
+
+h2 {
+  margin: 0;
+  font-size: 4rem;
+  color: var(--title-color);
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  /* responsive image (image adapts to container)*/
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 27;
+}
+
+/* ****** Components ****** */
+
+/* ****** Utilities ****** */
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+/* ****** Site Styles ****** */
