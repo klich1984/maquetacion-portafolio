@@ -219,6 +219,8 @@ p {
   display: none;
 }
 /* ****** Site Styles ****** */
+
+
 .home {
   height: 100vh;
   width: 100%;
@@ -227,6 +229,12 @@ p {
 
 .home-container {
   min-width: 316px;
+}
+
+.home-container h1 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
 }
 
 .home-container > img {
@@ -292,11 +300,36 @@ p {
 		height: var(--header-height-desktop);
 	}
 
-	.home {
-		height: 100vh;
-	}
+  .home {
+    padding: 5rem 0;
+    height: 100vh;
+  }
+
+  .home-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .home-container div {
+    width: 14.75rem;
+  }
+
+  .home-container {
+    width: 646px;
+    margin: auto;
+  }
+
+  .home-container h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    color: var(--title-color);
+  }
 
 	.project {
 		height: 100vh;
 	}
+
+  .text-regular {
+    font-size: 1.125rem;
+  }
 }
