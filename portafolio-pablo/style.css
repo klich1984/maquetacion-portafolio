@@ -12,6 +12,7 @@ Layout mobile first
   --white-color: #FFFFFE;
   --text-color: #5F6C7B;
   --title-color: #094067;
+  --background-color-project: #D8EEFE;
   --background-alpha-color: rgba(36, 38, 41, 0.5);
   --background-dark-color: #242629;
   --background-button-color: #EAF0F3;
@@ -218,11 +219,31 @@ p {
 .none {
   display: none;
 }
-/* ****** Site Styles ****** */
 
+/* ****** Site Styles ****** */
+.container-buttons div:first-child {
+  padding: 1rem 0;
+}
+
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  padding: 1.25rem 1.375rem;
+  width: 100%;
+  height: var(--header-height-movil);
+  background-color: var(--white-color);
+}
+
+.header > .container {
+	height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .home {
-  height: 100vh;
   width: 100%;
   padding: 2rem 1.375rem;
 }
@@ -248,32 +269,7 @@ p {
   font-size: 1.25rem;
 }
 
-.header {
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 990;
-  padding: 1.25rem 1.375rem;
-  width: 100%;
-  height: var(--header-height-movil);
-  background-color: var(--white-color);
-}
-
-.header > .container {
-	height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo a {
-  color: var(--second-color);
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.home-btn {
+.btn {
   border-radius: 0.25rem;
   padding: 0.75rem 2.5rem;
   display: flex;
@@ -285,13 +281,32 @@ p {
   font-size: 1.125rem;
   text-align: center;
   text-decoration: none;
-  color: var(--white-color);
-  background-color: var(--button-color);
+  color: var(--text-color-button);
+  background-color: var(--background-color-button);
+  border: var(--border-btn);
+}
+
+.logo a {
+  color: var(--second-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .project {
-  height: 100vh;
+  background-color: var(--background-color-project);
 }
+
+.project-card {
+  /* height: 100vh; */
+  padding: 8rem 1.375rem 5rem 1.375rem;
+}
+
+.project img {
+  width: 36.7rem;
+  padding-bottom: 2rem;
+}
+
 
 /* ****** Descktop version ****** */
 @media screen and (min-width: 1024px) {
@@ -302,21 +317,21 @@ p {
 
   .home {
     padding: 5rem 0;
-    height: 100vh;
+
   }
 
-  .home-btn {
+  .btn {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-  }
-
-  .home-container div {
-    width: 14.75rem;
   }
 
   .home-container {
     width: 646px;
     margin: auto;
+  }
+
+  .home-container div {
+    width: 14.75rem;
   }
 
   .home-container h1 {
@@ -325,9 +340,6 @@ p {
     color: var(--title-color);
   }
 
-	.project {
-		height: 100vh;
-	}
 
   .text-regular {
     font-size: 1.125rem;

@@ -78,9 +78,13 @@
 					ingeniería y productos para comprender los problemas y las
 					circunstancias de los clientes.
 				</p>
+				<!-- use of style tag to pass a property -->
 				<div>
 					<a
-						class="home-btn  box-shadow-1"
+						class="btn box-shadow-1"
+						style="
+							--background-color-button: var(--button-color);
+							--text-color-button: var(--white-color);"
 						href="https://drive.google.com/file/d/1B5Ok3sF9NLLqMyYFkpYpWka5iEMBTRAI/view?usp=sharing"
 						target="_blank"
 						rel="noopener"
@@ -91,7 +95,47 @@
 		</section>
 		<!-- Section Projects -->
 		<section id="proyectos" class="project">
-			<h2>Proyectos</h2>
+			<article id="proyecto1" class="project-card">
+				<img
+					class="project-img"
+					src="./assets/img-project1.png"
+					alt="proyecto 1"
+				/>
+				<article class="project-description">
+					<h3>Netnet</h3>
+					<p class="text-regular">
+						Netnet es una de las plataformas de entretenimiento con más
+						ranking a nivel mundial y detrás de las películas y series que
+						nos ofrece, hay un diseño con el que está estructurada...
+					</p>
+					<!-- use of style tag to pass a property -->
+					<div class="container-buttons">
+						<div>
+							<a
+								class="btn box-shadow-1"
+								style="
+									--background-color-button: transparent;
+									--text-color-button: var(--title-color);
+									--border-btn: 2px solid var(--title-color);
+								"
+								href="#proyecto1"
+								>Ver código
+							</a>
+						</div>
+						<div>
+							<a
+								class="btn box-shadow-1"
+								style="
+									--background-color-button: var(--button-color);
+									--text-color-button: var(--white-color);
+								"
+								href="#proyecto1"
+								>Ver proyecto
+							</a>
+						</div>
+					</div>
+				</article>
+			</article>
 		</section>
 		<!-- Section Experience -->
 		<section id="testimonios" class="testimonial">
