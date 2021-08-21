@@ -225,6 +225,11 @@ p {
   padding: 1rem 0;
 }
 
+.flex-row-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .header {
   position: sticky;
   left: 0;
