@@ -221,11 +221,28 @@ p {
 }
 
 /* ****** Site Styles ****** */
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.75rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.1875rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color-button);
+  background-color: var(--background-color-button);
+  border: var(--border-btn);
+}
+
 .container-buttons div:first-child {
   padding: 1rem 0;
 }
 
-.flex-row-reverse {
+.flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -274,23 +291,6 @@ p {
   font-size: 1.25rem;
 }
 
-.btn {
-  border-radius: 0.25rem;
-  padding: 0.75rem 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 3.1875rem;
-  font-weight: 600;
-  font-size: 1.125rem;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text-color-button);
-  background-color: var(--background-color-button);
-  border: var(--border-btn);
-}
-
 .logo a {
   color: var(--second-color);
   font-weight: 700;
@@ -315,7 +315,36 @@ p {
 
 /* ****** Descktop version ****** */
 @media screen and (min-width: 1024px) {
-	.header {
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-buttons div {
+    width: 12.5rem;
+  }
+
+  .flex-row {
+    display: flex;
+  }
+
+  .flex-column-reverse {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .header {
 		padding: 2rem 5.5625rem;
 		height: var(--header-height-desktop);
 	}
@@ -323,11 +352,6 @@ p {
   .home {
     padding: 5rem 0;
 
-  }
-
-  .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
   }
 
   .home-container {
@@ -345,6 +369,25 @@ p {
     color: var(--title-color);
   }
 
+  .project-card {
+    padding: 5rem 5rem 5rem 10.5rem;
+  }
+
+  .project-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 7rem;
+  }
+
+  .project-description-reverse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 7rem;
+  }
 
   .text-regular {
     font-size: 1.125rem;
