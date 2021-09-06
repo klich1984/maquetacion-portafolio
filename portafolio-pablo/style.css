@@ -11,7 +11,7 @@ Layout mobile first
   --third-color: #EF4565;
   --white-color: #FFFFFE;
   --text-color: #5F6C7B;
-  --title-color: #094067;
+  --blue-color: #094067;
   --background-color-project: #D8EEFE;
   --background-alpha-color: rgba(36, 38, 41, 0.5);
   --background-dark-color: #242629;
@@ -59,24 +59,26 @@ a:hover {
 h1 {
   margin: 0;
   font-size: 4.5rem;
-  color: var(--title-color);
+  color: var(--blue-color);
 }
 
 h2 {
   margin: 0;
   font-size: 4rem;
-  color: var(--title-color);
+  color: var(--blue-color);
 }
 
 h3 {
   margin: 1rem 0;
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--blue-color);
 }
 
 h4 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--background-color-project);
 }
 
 h5 {
@@ -242,6 +244,32 @@ p {
   padding: 1rem 0;
 }
 
+.experience-card {
+  padding-top: 2.625rem;
+}
+
+.experience-card h3,
+.experience-card p {
+  margin: 0;
+}
+
+.experience-card h4 {
+  margin: 1rem 0;
+}
+
+.experience-title h3 {
+  margin: 0 0 1rem 0;
+}
+
+.experience-container h3,
+.experience-container p {
+  color: var(--white-color);
+}
+
+.experience-title hr {
+  margin: 0;
+}
+
 .flex-column-reverse {
   display: flex;
   flex-direction: column-reverse;
@@ -277,7 +305,7 @@ p {
 .home-container h1 {
   margin: 1rem 0;
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--blue-color);
 }
 
 .home-container > img {
@@ -311,6 +339,12 @@ p {
   width: 36.7rem;
   padding-bottom: 2rem;
 }
+
+.testimonial {
+  padding: 5rem 1.375rem;
+  background-color: var(--blue-color);
+}
+
 
 
 /* ****** Descktop version ****** */
@@ -366,7 +400,7 @@ p {
   .home-container h1 {
     margin: 0;
     font-size: 4.5rem;
-    color: var(--title-color);
+    color: var(--blue-color);
   }
 
   .project-card {
