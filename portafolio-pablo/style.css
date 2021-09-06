@@ -384,13 +384,11 @@ p {
 	}
 
   .home {
-    padding: 5rem 0;
-
+    padding: 5rem 21.5625rem;
   }
 
   .home-container {
-    width: 646px;
-    margin: auto;
+    min-width: 360px;
   }
 
   .home-container div {
@@ -421,6 +419,10 @@ p {
     flex-direction: column;
     justify-content: center;
     margin-left: 7rem;
+  }
+
+  .testimonial {
+    padding: 5rem 21.5625rem;
   }
 
   .text-regular {
